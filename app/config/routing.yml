@@ -1,0 +1,43 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+redirect_sylius_shop_product_index:
+    path: /{_locale}/taxons/{slug}
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::redirectAction
+    defaults:
+        route: bitbag_sylius_elasticsearch_plugin_shop_list_products
+        permanent: true
+    requirements:
+        slug: .+
+
+bitbag_sylius_elasticsearch_plugin:
+    resource: "@BitBagSyliusElasticsearchPlugin/Resources/config/routing.yml"
+
+bitbag_sylius_cms_plugin:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing.yml"
+
+sylius_admin:
+    resource: "@SyliusAdminBundle/Resources/config/routing.yml"
+    prefix: /admin
+
+sylius_api:
+    resource: "@SyliusAdminApiBundle/Resources/config/routing.yml"
+    prefix: /api
+
+sylius_shop:
+    resource: "@SyliusShopBundle/Resources/config/routing.yml"
+    prefix: /{_locale}
+    requirements:
+        _locale: ^[a-z]{2}(?:_[A-Z]{2})?$
+
+sylius_shop_payum:
+    resource: "@SyliusShopBundle/Resources/config/routing/payum.yml"
+
+sylius_shop_default_locale:
+    path: /
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.shop.locale_switch:switchAction
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
