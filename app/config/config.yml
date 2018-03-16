@@ -17,6 +17,9 @@ imports:
 parameters:
     locale: en_US
 
+    bitbag_es_excluded_filter_options: []
+    bitbag_es_excluded_filter_attributes: ['book_isbn', 'book_pages']
+
 framework:
     translator: { fallbacks: ["%locale%"] }
     secret: "%secret%"
