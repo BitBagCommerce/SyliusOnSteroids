@@ -112,12 +112,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BitBagCommerce/SyliusElasticsearchPlugin.git",
-                "reference": "8be9631797c1641d751ba03bfcd2c2190f28c70f"
+                "reference": "eb87857b7f856a2d75e5afe940476ed4a7f317d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusElasticsearchPlugin/zipball/8be9631797c1641d751ba03bfcd2c2190f28c70f",
-                "reference": "8be9631797c1641d751ba03bfcd2c2190f28c70f",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusElasticsearchPlugin/zipball/eb87857b7f856a2d75e5afe940476ed4a7f317d3",
+                "reference": "eb87857b7f856a2d75e5afe940476ed4a7f317d3",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +156,7 @@
                 "MIT"
             ],
             "description": "BitBag Elasticsearch plugin for Sylius.",
-            "time": "2018-03-15 22:36:39"
+            "time": "2018-03-16 10:36:25"
         },
         {
             "name": "clue/stream-filter",
