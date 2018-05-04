@@ -25,7 +25,9 @@
         "sylius/sylius": "1.1.*",
         "sylius-labs/coding-standard": "^1.0",
         "bitbag/elasticsearch-plugin": "dev-master",
-        "bitbag/cms-plugin": "^1.2"
+        "bitbag/cms-plugin": "^1.2",
+        "bitbag/mollie-plugin": "dev-master",
+        "bitbag/wishlist-plugin": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.4",

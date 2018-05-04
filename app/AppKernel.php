@@ -34,6 +34,8 @@ class AppKernel extends Kernel
             new \FOS\ElasticaBundle\FOSElasticaBundle(),
             new \BitBag\SyliusElasticsearchPlugin\BitBagSyliusElasticsearchPlugin(),
             new \BitBag\SyliusCmsPlugin\BitBagSyliusCmsPlugin(),
+            new \BitBag\SyliusMolliePlugin\BitBagSyliusMolliePlugin(),
+            new \BitBag\SyliusWishlistPlugin\BitBagSyliusWishlistPlugin(),
 
             new \AppBundle\AppBundle(),
         ];

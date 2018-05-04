@@ -9,10 +9,13 @@ imports:
 
     - { resource: "@BitBagSyliusElasticsearchPlugin/Resources/config/config.yml" }
     - { resource: "@BitBagSyliusCmsPlugin/Resources/config/config.yml" }
+    - { resource: "@BitBagSyliusMolliePlugin/Resources/config/config.yml" }
+    - { resource: "@BitBagSyliusWishlistPlugin/Resources/config/config.yml" }
 
     - { resource: "parameters.yml" }
     - { resource: "security.yml" }
     - { resource: "fixtures.yml" }
+    - { resource: "bitbag_fixtures.yml" }
 
 parameters:
     locale: en_US
