@@ -34,3 +34,12 @@ parameters:
 
     mailer_sender_name: BitBag
     mailer_address: no-reply@demo.bitbag.shop
+
+    bitbag.shipping_gateway.validation_groups: ['bitbag']
+    bitbag.shipping_labels_path: '%kernel.root_dir%/../shipping_labels'
+
+    mailchimp.api_key: 6a74ec890676264ec8116a7945929d12-us18
+    mailchimp.list_id: 8af647b5c0
+
+    wkhtmltopdf_binary_path: /usr/local/bin/wkhtmltopdf
+    invoices_root_dir: "%kernel.root_dir%/../invoices"

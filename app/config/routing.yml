@@ -13,6 +13,7 @@ redirect_sylius_shop_product_index:
 bitbag_sylius_elasticsearch_plugin:
     resource: "@BitBagSyliusElasticsearchPlugin/Resources/config/routing.yml"
 
+
 bitbag_sylius_cms_plugin:
     resource: "@BitBagSyliusCmsPlugin/Resources/config/routing.yml"
 
@@ -22,9 +23,24 @@ bitbag_sylius_wishlist_plugin:
 bitbag_sylius_mollie_plugin:
     resource: "@BitBagSyliusMolliePlugin/Resources/config/routing.yml"
 
+bitbag_sylius_mailchimp_plugin:
+    resource: "@BitBagSyliusMailChimpPlugin/Resources/config/routing.yml"
+    prefix: /
+
+bitbag_shipping_export_plugin:
+    resource: "@BitBagSyliusShippingExportPlugin/Resources/config/routing.yml"
+    prefix: /admin
+
 sylius_admin:
     resource: "@SyliusAdminBundle/Resources/config/routing.yml"
     prefix: /admin
+
+bitbag_sylius_invoicing_plugin:
+    resource: "@BitBagSyliusInvoicingPlugin/Resources/config/routing.yml"
+    prefix: /admin
+
+bitbag_sylius_adyen_plugin:
+    resource: "@BitBagSyliusAdyenPlugin/Resources/config/routing.yml"
 
 sylius_api:
     resource: "@SyliusAdminApiBundle/Resources/config/routing.yml"

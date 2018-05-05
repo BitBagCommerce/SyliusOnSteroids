@@ -19,6 +19,7 @@
             "homepage": "http://github.com/Sylius/Sylius/contributors"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": "^7.1",
 
@@ -27,7 +28,15 @@
         "bitbag/elasticsearch-plugin": "dev-master",
         "bitbag/cms-plugin": "^1.2",
         "bitbag/mollie-plugin": "dev-master",
-        "bitbag/wishlist-plugin": "dev-master"
+        "bitbag/wishlist-plugin": "dev-master",
+        "bitbag/shipping-export-plugin": "dev-master",
+        "bitbag/dhl24-pl-shipping-export-plugin": "dev-master",
+        "bitbag/przelewy24-plugin": "dev-master",
+        "bitbag/payu-plugin": "dev-master",
+        "bitbag/mailchimp-plugin": "dev-master",
+        "bitbag/invoicing-plugin": "dev-master",
+        "bitbag/mercanet-bnp-paribas-plugin": "dev-master",
+        "bitbag/adyen-plugin": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.4",

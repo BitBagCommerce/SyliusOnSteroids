@@ -11,6 +11,9 @@ imports:
     - { resource: "@BitBagSyliusCmsPlugin/Resources/config/config.yml" }
     - { resource: "@BitBagSyliusMolliePlugin/Resources/config/config.yml" }
     - { resource: "@BitBagSyliusWishlistPlugin/Resources/config/config.yml" }
+    - { resource: "@BitBagSyliusShippingExportPlugin/Resources/config/config.yml" }
+    - { resource: "@BitBagSyliusInvoicingPlugin/Resources/config/config.yml" }
+    - { resource: "@BitBagSyliusAdyenPlugin/Resources/config/state_machine.yml" }
 
     - { resource: "parameters.yml" }
     - { resource: "security.yml" }

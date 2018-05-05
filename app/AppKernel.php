@@ -36,6 +36,15 @@ class AppKernel extends Kernel
             new \BitBag\SyliusCmsPlugin\BitBagSyliusCmsPlugin(),
             new \BitBag\SyliusMolliePlugin\BitBagSyliusMolliePlugin(),
             new \BitBag\SyliusWishlistPlugin\BitBagSyliusWishlistPlugin(),
+            new \BitBag\SyliusShippingExportPlugin\BitBagSyliusShippingExportPlugin(),
+            new BitBag\Dhl24PlShippingExportPlugin\Dhl24PlShippingExportPlugin(),
+            new \BitBag\SyliusPrzelewy24Plugin\SyliusPrzelewy24Plugin(),
+            new \BitBag\SyliusMailChimpPlugin\BitBagSyliusMailChimpPlugin(),
+            new \BitBag\SyliusPayUPlugin\BitBagSyliusPayUPlugin(),
+            new \Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+            new \BitBag\SyliusInvoicingPlugin\BitBagSyliusInvoicingPlugin(),
+            new \BitBag\MercanetBnpParibasPlugin\BitBagMercanetBnpParibasPlugin(),
+            new \BitBag\SyliusAdyenPlugin\BitBagSyliusAdyenPlugin(),
 
             new \AppBundle\AppBundle(),
         ];
