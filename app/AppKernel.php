@@ -45,6 +45,7 @@ class AppKernel extends Kernel
             new \BitBag\SyliusInvoicingPlugin\BitBagSyliusInvoicingPlugin(),
             new \BitBag\MercanetBnpParibasPlugin\BitBagMercanetBnpParibasPlugin(),
             new \BitBag\SyliusAdyenPlugin\BitBagSyliusAdyenPlugin(),
+            new \BitBag\SyliusAclPlugin\BitBagSyliusAclPlugin(),
 
             new \AppBundle\AppBundle(),
         ];

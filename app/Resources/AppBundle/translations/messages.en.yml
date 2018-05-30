@@ -1,0 +1,16 @@
+bitbag_sylius_acl_plugin:
+    parent:
+        shipping_gateways: Shipping gateways
+        shipping_exports: Shipping exports
+        sections: Sections
+        pages: Pages
+        frequently_asked_questions: FAQ
+        company_datas: Company datas
+        blocks: Blocks
+    action:
+        export_all_shipments: Export all shipments
+        export_single_shipments: Export single shipments
+        get_shipping_label: Get shipping abel
+    ajax:
+        section_by_code: Get section by code (ajax)
+        section_by_name_phrase: Get section by name phrase (ajax)

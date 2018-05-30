@@ -42,6 +42,9 @@ bitbag_sylius_invoicing_plugin:
 bitbag_sylius_adyen_plugin:
     resource: "@BitBagSyliusAdyenPlugin/Resources/config/routing.yml"
 
+bitbag_sylius_acl_plugin:
+    resource: "@BitBagSyliusAclPlugin/Resources/config/routing.yml"
+
 sylius_api:
     resource: "@SyliusAdminApiBundle/Resources/config/routing.yml"
     prefix: /api
@@ -63,3 +66,29 @@ sylius_shop_default_locale:
 
 _liip_imagine:
     resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+bitbag_admin_export_all_new_shipments:
+    path: /shipping-exports/export/all
+    methods: [POST, PUT]
+    defaults:
+        _controller: bitbag.controller.shipping_export:exportAllNewShipmentsAction
+        _bitbag_sylius_acl_plugin:
+            label: action.export_all_shipments
+            parent: shipping_exports
+
+bitbag_admin_export_single_shipment:
+    path: /shipping-exports/export/{id}
+    methods: [POST, PUT]
+    defaults:
+        _controller: bitbag.controller.shipping_export:exportSingleShipmentAction
+        _bitbag_sylius_acl_plugin:
+            label: action.export_single_shipments
+            parent: shipping_exports
+
+bitbag_admin_get_shipping_label:
+    path: /shipping-exports/label/{id}
+    defaults:
+        _controller: bitbag.controller.shipping_export:getLabel
+        _bitbag_sylius_acl_plugin:
+            label: action.get_shipping_label
+            parent: shipping_exports

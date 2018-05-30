@@ -19,6 +19,12 @@
             "homepage": "http://github.com/Sylius/Sylius/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/BitBagCommerce/SyliusAclPlugin"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
         "php": "^7.1",
@@ -36,7 +42,9 @@
         "bitbag/mailchimp-plugin": "dev-master",
         "bitbag/invoicing-plugin": "dev-master",
         "bitbag/mercanet-bnp-paribas-plugin": "dev-master",
-        "bitbag/adyen-plugin": "dev-master"
+        "bitbag/adyen-plugin": "dev-master",
+        "bitbag/acl-plugin": "dev-master",
+        "nochso/html-compress-twig": "^2.0"
     },
     "require-dev": {
         "behat/behat": "^3.4",

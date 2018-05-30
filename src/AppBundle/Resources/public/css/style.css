@@ -1,0 +1,152 @@
+.bitbag-page a, .bitbag-page a:hover {
+    color: rgba(0, 0, 0, .87);
+    width: 100%;
+}
+.bitbag-image-block img {
+    position: relative;
+}
+.top.one {
+    margin-top: 1rem;
+}
+.bitbag-image-block span {
+    z-index: 25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.bitbag-image-block span a {
+    text-decoration: none;
+    width: 100%;
+    color: #ffffff;
+}
+.bitbag-page, .bitbag-frequently-asked-question {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+}
+.bitbag-page:hover {
+    background: rgba(0, 0, 0, .03);
+}
+.italic {
+    font-style: italic;
+}
+.intro {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.intro.promo {
+    text-align: center;
+    text-transform: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+.ui.menu .item > .label.credentials {
+    font-size: 14px;
+}
+.cms-logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bitbag-page a, .bitbag-page a:hover {
+    color: rgba(0, 0, 0, .87);
+    width: 100%;
+}
+
+.bitbag-image-block img {
+    position: relative;
+}
+
+.label-red {
+    background-color: #f44336!important;
+    border-color: #f44336!important;
+    color: #FFF!important;
+}
+
+.ui.menu .item>.label-red {
+    background: #999;
+    color: #FFF;
+    margin-left: 1em;
+    padding: .3em .78571429em;
+}
+
+.ui.teal.label-red, .ui.teal.labels .label-red {
+    background-color: #F44336!important;
+    border-color: #F44336!important;
+    color: #FFF!important;
+}
+.ui.label-red:last-child {
+    margin-right: 0;
+}
+.ui.label-red:first-child {
+    margin-left: 0;
+}
+.ui.label-red, .ui.labels .label {
+    font-size: .85714286rem;
+}
+.ui.label-red {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+    margin: 0 .14285714em;
+    background-color: #E8E8E8;
+    background-image: none;
+    padding: .5833em .833em;
+    color: rgba(0,0,0,.6);
+    text-transform: none;
+    font-weight: 700;
+    border: 0 solid transparent;
+    border-radius: .28571429rem;
+    -webkit-transition: background .1s ease;
+    transition: background .1s ease;
+}
+
+.top.one {
+    margin-top: 1rem;
+}
+
+.bitbag-image-block span {
+    z-index: 25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.bitbag-image-block span a {
+    text-decoration: none;
+    width: 100%;
+    color: #ffffff;
+}
+
+.bitbag-page, .bitbag-frequently-asked-question {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+}
+
+.bitbag-page:hover {
+    background: rgba(0, 0, 0, .03);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.intro {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+a.plugin-store {
+    border: 1px solid #a9adb1;
+}

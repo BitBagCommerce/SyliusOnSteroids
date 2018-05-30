@@ -1,5 +1,5 @@
+{% htmlcompress %}
 <!DOCTYPE html>
-
 <html lang="{{ app.request.locale|slice(0, 2) }}">
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
 
     {% block stylesheets %}
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-        <link href="{{ asset('assets/shop/css/bitbag.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/app/css/style.css') }}" rel="stylesheet">
 
         {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/css/style.css'} %}
 
@@ -22,57 +22,7 @@
     {% endblock %}
 
     {{ sonata_block_render_event('sylius.shop.layout.head') }}
-    <style>
-        .bitbag-page a, .bitbag-page a:hover {
-            color: rgba(0, 0, 0, .87);
-            width: 100%;
-        }
 
-        .bitbag-image-block img {
-            position: relative;
-        }
-
-        .top.one {
-            margin-top: 1rem;
-        }
-
-        .bitbag-image-block span {
-            z-index: 25;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 2rem;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-
-        .bitbag-image-block span a {
-            text-decoration: none;
-            width: 100%;
-            color: #ffffff;
-        }
-
-        .bitbag-page, .bitbag-frequently-asked-question {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid rgba(34, 36, 38, .15);
-        }
-
-        .bitbag-page:hover {
-            background: rgba(0, 0, 0, .03);
-        }
-
-        .italic {
-            font-style: italic;
-        }
-
-        .intro {
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 900;
-        }
-    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114008131-2"></script>
     <script>
@@ -115,11 +65,13 @@
                     <a href="{{ path('bitbag_sylius_cms_plugin_shop_page_index_by_section_code', {'sectionCode' : 'blog'}) }}"
                        class="item">
                         Blog
-                        <span class="ui teal label">NEW</span>
                     </a>
                     <a href="{{ path('bitbag_sylius_cms_plugin_shop_frequently_asked_question_index') }}" class="item">
                         FAQs
-                        <span class="ui teal label">NEW</span>
+                    </a>
+                    <a href="http://market.bitbag.shop/store/plugins" class="item plugin-store">
+                        Plugin store
+                        <span class="ui teal label-red">NEW</span>
                     </a>
                 </div>
             </header>
@@ -140,6 +92,22 @@
     {% endblock %}
 </div>
 
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="1337569172989398">
+</div>
+
 {% block javascripts %}
     {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/shop/js/app.js'} %}
 
@@ -150,3 +118,4 @@
 {{ sonata_block_render_event('sylius.shop.layout.after_body') }}
 </body>
 </html>
+{% endhtmlcompress %}

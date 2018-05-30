@@ -14,6 +14,7 @@ imports:
     - { resource: "@BitBagSyliusShippingExportPlugin/Resources/config/config.yml" }
     - { resource: "@BitBagSyliusInvoicingPlugin/Resources/config/config.yml" }
     - { resource: "@BitBagSyliusAdyenPlugin/Resources/config/state_machine.yml" }
+    - { resource: "@BitBagSyliusAclPlugin/Resources/config/config.yml" }
 
     - { resource: "parameters.yml" }
     - { resource: "security.yml" }
@@ -81,3 +82,36 @@ sylius_mailer:
     sender:
         name: "%mailer_sender_name%"
         address: "%mailer_address%"
+
+sylius_resource:
+    authorization_checker: bitbag_sylius_acl_plugin.authorization_checker.resource
+
+sylius_user:
+    resources:
+        admin:
+            user:
+                classes:
+                    model: BitBag\SyliusAclPlugin\Entity\AdminUser
+
+services:
+    twig.extension.httpkernel:
+        class: BitBag\SyliusAclPlugin\Twig\HttpKernelExtension
+        arguments:
+            - "@twig.runtime.httpkernel"
+
+    twig.extension.routing:
+        class: BitBag\SyliusAclPlugin\Twig\RoutingExtension
+        public: false
+        arguments:
+            - "@router.default"
+            - "@bitbag_sylius_acl_plugin.resolver.admin_permission"
+
+    nochso.html_compress_extension:
+        class: nochso\HtmlCompressTwig\Extension
+        tags:
+            - { name: twig.extension }
+
+bit_bag_sylius_acl:
+    permissions:
+        bitbag_sylius_mollie_plugin_cancel_subscription_mollie:
+            enabled: false
