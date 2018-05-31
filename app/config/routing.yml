@@ -68,7 +68,7 @@ _liip_imagine:
     resource: "@LiipImagineBundle/Resources/config/routing.xml"
 
 bitbag_admin_export_all_new_shipments:
-    path: /shipping-exports/export/all
+    path: /admin/shipping-exports/export/all
     methods: [POST, PUT]
     defaults:
         _controller: bitbag.controller.shipping_export:exportAllNewShipmentsAction
@@ -77,7 +77,7 @@ bitbag_admin_export_all_new_shipments:
             parent: shipping_exports
 
 bitbag_admin_export_single_shipment:
-    path: /shipping-exports/export/{id}
+    path: /admin/shipping-exports/export/{id}
     methods: [POST, PUT]
     defaults:
         _controller: bitbag.controller.shipping_export:exportSingleShipmentAction
@@ -86,7 +86,7 @@ bitbag_admin_export_single_shipment:
             parent: shipping_exports
 
 bitbag_admin_get_shipping_label:
-    path: /shipping-exports/label/{id}
+    path: /admin/shipping-exports/label/{id}
     defaults:
         _controller: bitbag.controller.shipping_export:getLabel
         _bitbag_sylius_acl_plugin:
