@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e4f7e9ab3413f78b74afa1d609dd1b3",
+    "content-hash": "f77466d486622f92a9a1ee89f54e45b0",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:BitBagCommerce/SyliusAclPlugin.git",
-                "reference": "d271bdb6d7053931e0ab7ea89eddaf598b524b11"
+                "reference": "d781ac81575fe63c8e5dd55efb70a07d0e3a58b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusAclPlugin/zipball/d271bdb6d7053931e0ab7ea89eddaf598b524b11",
-                "reference": "d271bdb6d7053931e0ab7ea89eddaf598b524b11",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusAclPlugin/zipball/d781ac81575fe63c8e5dd55efb70a07d0e3a58b1",
+                "reference": "d781ac81575fe63c8e5dd55efb70a07d0e3a58b1",
                 "shasum": ""
             },
             "require": {
@@ -104,7 +104,8 @@
             "autoload": {
                 "psr-4": {
                     "BitBag\\SyliusAclPlugin\\": "src/",
-                    "Tests\\BitBag\\SyliusAclPlugin\\": "tests/"
+                    "Tests\\BitBag\\SyliusAclPlugin\\": "tests/",
+                    "AppBundle\\": "tests/Application/src/AppBundle/"
                 }
             },
             "autoload-dev": {
@@ -132,7 +133,7 @@
                 "MIT"
             ],
             "description": "ACL plugin for Sylius.",
-            "time": "2018-05-30T21:22:39+00:00"
+            "time": "2018-06-06T10:07:27+00:00"
         },
         {
             "name": "bitbag/adyen-plugin",
@@ -747,17 +748,6 @@
             ],
             "description": "Shipping data export environment for Sylius platform applications",
             "time": "2018-02-06T18:09:21+00:00"
-        },
-        {
-            "name": "bitbag/test",
-            "version": "master",
-            "dist": {
-                "type": "zip",
-                "url": "file:///Users/patryk/Documents/www/SyliusOnSteroids/SyliusMolliePlugin-master.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
         },
         {
             "name": "bitbag/wishlist-plugin",
@@ -9461,7 +9451,7 @@
                     "email": "adrien.brault@gmail.com"
                 },
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -9511,7 +9501,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -10362,6 +10352,17 @@
                 "webdriver"
             ],
             "time": "2016-03-05T09:10:18+00:00"
+        },
+        {
+            "name": "bitbag/test",
+            "version": "master",
+            "dist": {
+                "type": "zip",
+                "url": "file:///Users/patryk/Documents/www/SyliusOnSteroids/SyliusMolliePlugin-master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
         },
         {
             "name": "bossa/phpspec2-expect",

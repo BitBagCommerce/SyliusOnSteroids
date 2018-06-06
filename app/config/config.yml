@@ -91,7 +91,7 @@ sylius_user:
         admin:
             user:
                 classes:
-                    model: BitBag\SyliusAclPlugin\Entity\AdminUser
+                    model: AppBundle\Entity\AdminUser
 
 services:
     twig.extension.httpkernel:
