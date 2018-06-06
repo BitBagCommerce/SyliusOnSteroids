@@ -10354,17 +10354,6 @@
             "time": "2016-03-05T09:10:18+00:00"
         },
         {
-            "name": "bitbag/test",
-            "version": "master",
-            "dist": {
-                "type": "zip",
-                "url": "file:///Users/patryk/Documents/www/SyliusOnSteroids/SyliusMolliePlugin-master.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
             "name": "bossa/phpspec2-expect",
             "version": "1.0.2",
             "source": {
