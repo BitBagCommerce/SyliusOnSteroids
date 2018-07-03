@@ -1,3 +1,5 @@
 services:
     app.controller.inpost.redirect:
         class: AppBundle\Controller\Action\InPostRedirectAction
+        arguments:
+            - "@sylius.http_client"
