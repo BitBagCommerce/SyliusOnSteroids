@@ -92,3 +92,8 @@ bitbag_admin_get_shipping_label:
         _bitbag_sylius_acl_plugin:
             label: action.get_shipping_label
             parent: shipping_exports
+
+app_inpost_redirect:
+    path: /inpost/redirect
+    defaults:
+        _controller: app.controller.inpost.redirect

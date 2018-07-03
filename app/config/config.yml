@@ -16,6 +16,8 @@ imports:
     - { resource: "@BitBagSyliusAdyenPlugin/Resources/config/state_machine.yml" }
     - { resource: "@BitBagSyliusAclPlugin/Resources/config/config.yml" }
 
+    - { resource: "@AppBundle/Resources/config/services.yml" }
+
     - { resource: "parameters.yml" }
     - { resource: "security.yml" }
     - { resource: "fixtures.yml" }
