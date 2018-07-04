@@ -31,6 +31,6 @@ final class InPostRedirectAction
 //            return new Response();
 //        }
 
-        return new Response();
+        return new Response('OK');
     }
 }
