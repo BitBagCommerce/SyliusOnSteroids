@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace AppBundle\Controller\Action;
 
 use GuzzleHttp\Client;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -21,7 +20,11 @@ final class InPostRedirectAction
     public function __invoke(Request $request): Response
     {
         try {
-            $this->client->request('POST', 'https://befe0e25.ngrok.io');
+            $options = [
+                'json' => $request->request->all(),
+            ];
+
+            $this->client->request('POST', 'https://befe0e25.ngrok.io', $options);
         } catch (\Exception $exception) {
 
         }
