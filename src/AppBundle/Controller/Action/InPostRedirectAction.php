@@ -20,17 +20,17 @@ final class InPostRedirectAction
 
     public function __invoke(Request $request): Response
     {
-        if ($request->isMethod('POST') || $request->isMethod('PUT')) {
+//        if ($request->isMethod('POST') || $request->isMethod('PUT')) {
+//
+//            $options = [
+//                'json' => $request->request->all(),
+//            ];
+//
+//            $this->client->request('POST', 'http://fd23d8b5.ngrok.io', $options);
+//
+//            return new Response();
+//        }
 
-            $options = [
-                'json' => $request->request->all(),
-            ];
-
-            $this->client->request('POST', 'http://fd23d8b5.ngrok.io', $options);
-
-            return new Response();
-        }
-
-        return new RedirectResponse('http://fd23d8b5.ngrok.io');
+        return new Response();
     }
 }
