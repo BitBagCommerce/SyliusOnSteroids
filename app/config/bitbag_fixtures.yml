@@ -322,9 +322,9 @@ sylius_fixtures:
                                                 </p>
 
                                                 <pre>
-                                                {{ bitbag_cms_render_block('homepage_intro') }}
-                                                {{ bitbag_cms_render_block('homepage_banner_image_1') }}
-                                                {{ bitbag_cms_render_block('homepage_banner_image_2') }}
+                                                {{bitbag_cms_render_block('homepage_intro')}}
+                                                {{bitbag_cms_render_block('homepage_banner_image_1')}}
+                                                {{bitbag_cms_render_block('homepage_banner_image_2')}}
                                                 </pre>
 
                                                 <p>

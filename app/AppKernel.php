@@ -46,6 +46,8 @@ class AppKernel extends Kernel
             new \BitBag\MercanetBnpParibasPlugin\BitBagMercanetBnpParibasPlugin(),
             new \BitBag\SyliusAdyenPlugin\BitBagSyliusAdyenPlugin(),
             new \BitBag\SyliusAclPlugin\BitBagSyliusAclPlugin(),
+            new \SitemapPlugin\SitemapPlugin(),
+            new \FOS\CKEditorBundle\FOSCKEditorBundle(),
 
             new \AppBundle\AppBundle(),
         ];

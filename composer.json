@@ -32,7 +32,7 @@
         "sylius/sylius": "1.1.*",
         "sylius-labs/coding-standard": "^1.0",
         "bitbag/elasticsearch-plugin": "dev-master",
-        "bitbag/cms-plugin": "^1.2",
+        "bitbag/cms-plugin": "2.0.x-dev",
         "bitbag/mollie-plugin": "dev-master",
         "bitbag/wishlist-plugin": "dev-master",
         "bitbag/shipping-export-plugin": "dev-master",
