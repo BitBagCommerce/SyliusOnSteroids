@@ -26,7 +26,7 @@ final class InPostRedirectAction
                 'json' => $request->request->all(),
             ];
 
-            $this->client->request('POST', 'https://befe0e25.ngrok.io/shipping/inpost/notify', $options);
+            $this->client->request('POST', 'https://9cdf94a0.ngrok.io/shipping/inpost/notify', $options);
         } catch (\Exception $exception) {
 
         }
