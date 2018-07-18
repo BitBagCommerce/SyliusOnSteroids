@@ -12,7 +12,8 @@
             </div>
         </div>
     {% else %}
-        <a href="{{ path('bitbag_sylius_elasticsearch_plugin_shop_list_products', {'slug': taxon.slug, '_locale': taxon.translation.locale}) }}" class="item">{{ taxon.name }}</a>
+        <a href="{{ path('sylius_shop_product_index', {'slug': taxon.slug, '_locale': taxon.translation.locale}) }}"
+           class="item">{{ taxon.name }}</a>
     {% endif %}
 {% endmacro %}
 

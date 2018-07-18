@@ -238,43 +238,14 @@ sylius_fixtures:
                 block:
                     options:
                         custom:
-                            homepage_header_image:
-                                type: image
-                                translations:
-                                    en_US:
-                                        image_path: "%fixtures_dir%/homepage_header.jpeg"
-                                        name: |
-                                            Some block name
-                            homepage_banner_image_1:
-                                type: image
-                                translations:
-                                    en_US:
-                                        image_path: "%fixtures_dir%/homepage_banner_1.jpeg"
-                                        link: "/en_US/page/about"
-                                        name: |
-                                            <a href="/en_US/page/about" class="italic">Click me! <i class="em em-kiss"></i></a>
-                            homepage_banner_image_2:
-                                type: image
-                                translations:
-                                    en_US:
-                                        image_path: "%fixtures_dir%/homepage_banner_2.jpeg"
                             homepage_products_info:
-                                type: html
                                 translations:
                                     en_US:
                                         content: |
                                             <div class="ui info message">
                                                 <i class="em em-arrow_down"></i> Click one of the below products to see what you can do with the blocks in your product view! <i class="em em-arrow_down"></i>
                                             </div>
-                            sale:
-                                type: image
-                                sections:
-                                    - "products"
-                                translations:
-                                    en_US:
-                                        image_path: "%fixtures_dir%/sale.jpeg"
                             section_info_block:
-                                type: html
                                 sections:
                                     - "products"
                                 translations:
@@ -287,7 +258,6 @@ sylius_fixtures:
                                             <p>It's done with a simple controller render:</p>
                                             <pre>{{ render(path('bitbag_sylius_cms_plugin_shop_block_index_by_section_code', {'sectionCode' : 'products', 'template' : '@BitBagSyliusCmsPlugin/Shop/Block/index.html.twig'})) }}</pre>
                             product_info_block:
-                                type: html
                                 products: 5
                                 translations:
                                     en_US:
@@ -295,15 +265,8 @@ sylius_fixtures:
                                             <div class="ignored info ui message">On the other hand, the block on the right is a block associated with specific products.</div>
                                             <p>This approach can be helpful with displaying some content dedicated to specific products, like size table or product story</p>
                                             <p>The way you render it is similar to the one from above example:</p>
-                                            <pre>{{ render(path('bitbag_syius_cms_plugin_shop_block_index_by_product_code', {'productCode' : product.code, 'template' : '@BitBagSyliusCmsPlugin/Shop/Block/index.html.twig'})) }}</pre>
-                            size_table:
-                                type: image
-                                products: 5
-                                translations:
-                                    en_US:
-                                        image_path: "%fixtures_dir%/size_table.jpeg"
+                                            <pre>{{ render(path('bitbag_sylius_cms_plugin_shop_block_index_by_product_code', {'productCode' : product.code, 'template' : '@BitBagSyliusCmsPlugin/Shop/Block/index.html.twig'})) }}</pre>
                             homepage_intro:
-                                type: html
                                 translations:
                                     en_US:
                                         content: |
@@ -312,7 +275,7 @@ sylius_fixtures:
                                                     The left block is rendered with the usage of the particular controller like this:
                                                 </p>
                                                 <pre>
-                                                {{ render(path('bitbag_sylius_cms_plugin_shop_block_render', {'code' : 'homepage_header_image'})) }}
+                                                render(path('bitbag_sylius_cms_plugin_shop_block_render', {'code' : 'homepage_header_image'}))
                                                 </pre>
                                                 <p>
                                                    It also can take template as a parameter, but it's optional. In this case, it works the same as below Twig functions. Sometimes you might want the block to render in a different template, that's where the controller is useful.
@@ -322,16 +285,11 @@ sylius_fixtures:
                                                 </p>
 
                                                 <pre>
-                                                {{bitbag_cms_render_block('homepage_intro')}}
-                                                {{bitbag_cms_render_block('homepage_banner_image_1')}}
-                                                {{bitbag_cms_render_block('homepage_banner_image_2')}}
+                                                bitbag_cms_render_block('homepage_intro')
+                                                bitbag_cms_render_block('homepage_banner_image_1')
+                                                bitbag_cms_render_block('homepage_banner_image_2')
                                                 </pre>
-
-                                                <p>
-                                                    The block with this nice woman is linked to another page. Click her and see what happens. No pornography included. I promise <i class="em em-relieved"></i>
-                                                </p>
                             lorem_ipsum:
-                                type: text
                                 sections:
                                     - "homepage"
                                 translations:
@@ -345,6 +303,60 @@ sylius_fixtures:
                                                 <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
                                             </ul>
                                             <p>Pellentesque habitant morbi tristique sene</p>
+                media:
+                    options:
+                        custom:
+                            homepage_header_image:
+                                type: image
+                                path: "%fixtures_dir%/homepage_header.jpeg"
+                                translations:
+                                    en_US:
+                                        name: |
+                                            <a href="/en_US/page/about">This is a linked title</a>
+                                        alt: Homepage image media
+                                        content: |
+                                            <h3>Media description</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                            homepage_video:
+                                type: video
+                                path: "%fixtures_dir%/homepage_video.mp4"
+                                translations:
+                                    en_US:
+                                        name: |
+                                            Homepage video media
+                                        alt: Homepage video
+                                        content: |
+                                            <h3>Media description</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                            homepage_pdf:
+                                type: file
+                                path: "%fixtures_dir%/BitBagOffer.pdf"
+                                translations:
+                                    en_US:
+                                        name: Homepage PDF media
+                                        alt: BitBag offer
+                                        content: |
+                                            <h3>File description</h3>
+                                            <p>
+                                                The below button links to a PDF file.
+                                                Check it out! <i class="em em-slightly_smiling_face"></i>
+                                            </p>
+                            size_table:
+                                type: image
+                                path: "%fixtures_dir%/size_table.jpeg"
+                            sale:
+                                type: image
+                                path: "%fixtures_dir%/sale.jpeg"
+                                sections:
+                                    - "products"
                 page:
                     options:
                         custom:
@@ -356,6 +368,7 @@ sylius_fixtures:
                                 translations:
                                     en_US:
                                         name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias?"
+                                        image_path: "%fixtures_dir%/homepage_header.jpeg"
                                         content: |
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verba tu fingas et ea dicas, quae non sentias? Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Propter nos enim illam, non propter eam nosmet ipsos diligimus. At ego quem huic anteponam non audeo dicere; </p>
 
