@@ -9,6 +9,7 @@ redirect_sylius_shop_product_index:
         permanent: true
     requirements:
         slug: .+
+        _locale: ^[a-z]{2}(?:_[A-Z]{2})?$
 
 bitbag_sylius_elasticsearch_plugin:
     resource: "@BitBagSyliusElasticsearchPlugin/Resources/config/routing.yml"
