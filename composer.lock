@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "ac0616b1f5e5c3a2d98a1d96ce16fe02",
@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:BitBagCommerce/SyliusAclPlugin.git",
-                "reference": "d781ac81575fe63c8e5dd55efb70a07d0e3a58b1"
+                "reference": "7a402523deb4d1e4fc8fb5b531532112425f5482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusAclPlugin/zipball/d781ac81575fe63c8e5dd55efb70a07d0e3a58b1",
-                "reference": "d781ac81575fe63c8e5dd55efb70a07d0e3a58b1",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusAclPlugin/zipball/7a402523deb4d1e4fc8fb5b531532112425f5482",
+                "reference": "7a402523deb4d1e4fc8fb5b531532112425f5482",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +133,11 @@
                 "MIT"
             ],
             "description": "ACL plugin for Sylius.",
-            "time": "2018-06-06T10:07:27+00:00"
+            "support": {
+                "source": "https://github.com/BitBagCommerce/SyliusAclPlugin/tree/v1.0.0",
+                "issues": "https://github.com/BitBagCommerce/SyliusAclPlugin/issues"
+            },
+            "time": "2018-06-08T00:41:20+00:00"
         },
         {
             "name": "bitbag/adyen-plugin",
@@ -191,12 +195,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BitBagCommerce/SyliusCmsPlugin.git",
-                "reference": "9e1547109b534da37f745c36c67c3ec4f87c8668"
+                "reference": "699d355944bcf387059be496510d7b93e92cdf48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/9e1547109b534da37f745c36c67c3ec4f87c8668",
-                "reference": "9e1547109b534da37f745c36c67c3ec4f87c8668",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/699d355944bcf387059be496510d7b93e92cdf48",
+                "reference": "699d355944bcf387059be496510d7b93e92cdf48",
                 "shasum": ""
             },
             "require": {
@@ -247,7 +251,7 @@
                 "MIT"
             ],
             "description": "CMS plugin for Sylius applications.",
-            "time": "2018-07-18T09:55:29+00:00"
+            "time": "2018-07-23T14:18:11+00:00"
         },
         {
             "name": "bitbag/dhl24-pl-shipping-export-plugin",
@@ -9647,7 +9651,7 @@
                     "email": "adrien.brault@gmail.com"
                 },
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -9697,7 +9701,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com"
                 }
             ],
