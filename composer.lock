@@ -195,12 +195,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BitBagCommerce/SyliusCmsPlugin.git",
-                "reference": "4f061e78c69e380697e5a162d1b6b3a3019f9634"
+                "reference": "452b0f9c68b3ea69db5491069f699a1545ed796d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/4f061e78c69e380697e5a162d1b6b3a3019f9634",
-                "reference": "4f061e78c69e380697e5a162d1b6b3a3019f9634",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/452b0f9c68b3ea69db5491069f699a1545ed796d",
+                "reference": "452b0f9c68b3ea69db5491069f699a1545ed796d",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +251,7 @@
                 "MIT"
             ],
             "description": "CMS plugin for Sylius applications.",
-            "time": "2018-07-26T15:46:46+00:00"
+            "time": "2018-07-26T19:04:40+00:00"
         },
         {
             "name": "bitbag/dhl24-pl-shipping-export-plugin",
