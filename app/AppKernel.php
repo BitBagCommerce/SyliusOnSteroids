@@ -31,6 +31,9 @@ class AppKernel extends Kernel
             new \FOS\OAuthServerBundle\FOSOAuthServerBundle(), // Required by SyliusAdminApiBundle.
             new \Sylius\Bundle\AdminApiBundle\SyliusAdminApiBundle(),
 
+            new Enqueue\Bundle\EnqueueBundle(),
+            new Enqueue\ElasticaBundle\EnqueueElasticaBundle(),
+
             new \FOS\ElasticaBundle\FOSElasticaBundle(),
             new \BitBag\SyliusElasticsearchPlugin\BitBagSyliusElasticsearchPlugin(),
             new \BitBag\SyliusCmsPlugin\BitBagSyliusCmsPlugin(),

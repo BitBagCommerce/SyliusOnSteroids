@@ -117,3 +117,11 @@ bit_bag_sylius_acl:
     permissions:
         bitbag_sylius_mollie_plugin_cancel_subscription_mollie:
             enabled: false
+
+enqueue:
+    transport:
+        default: "amqp:"
+    client: ~
+
+enqueue_elastica:
+    doctrine: ~
