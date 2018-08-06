@@ -8,7 +8,7 @@
 //$content = '';
 //$id = 17156;
 //
-//$content .= "INSERT INTO demo_dev.sylius_product_variant (id, product_id, tax_category_id, shipping_category_id, code, created_at, updated_at, position, version, on_hold, on_hand, tracked, width, height, depth, weight, shipping_required) VALUES ";
+//$content .= "INSERT INTO sylius_product_variant (id, product_id, tax_category_id, shipping_category_id, code, created_at, updated_at, position, version, on_hold, on_hand, tracked, width, height, depth, weight, shipping_required) VALUES ";
 //
 //for ($i = 1; $i <= $count; $i++) {
 //
@@ -44,7 +44,7 @@
 //$content = '';
 //$id = 17156;
 //
-//$content .= "INSERT INTO demo_dev.sylius_product_variant_translation (id, translatable_id, name, locale) VALUES ";
+//$content .= "INSERT INTO sylius_product_variant_translation (id, translatable_id, name, locale) VALUES ";
 //
 //for ($i = 1; $i <= $count; $i++) {
 //
@@ -93,7 +93,7 @@
 //
 //$x = 1;
 //
-//$content .= "INSERT INTO demo_dev.sylius_product_variant_option_value (variant_id, option_value_id) VALUES ";
+//$content .= "INSERT INTO sylius_product_variant_option_value (variant_id, option_value_id) VALUES ";
 //
 //for ($i = $id; $i <= ($count + $id); $i++) {
 //    for ($j = $startA; $j <= $endA; $j++) {
@@ -145,7 +145,7 @@
 //$content = '';
 //$id = 17156;
 //
-//$content .= "INSERT INTO demo_dev.sylius_channel_pricing (id, product_variant_id, price, original_price, channel_code) VALUES ";
+//$content .= "INSERT INTO sylius_channel_pricing (id, product_variant_id, price, original_price, channel_code) VALUES ";
 //
 //for ($i = 1; $i <= $count; $i++) {
 //
