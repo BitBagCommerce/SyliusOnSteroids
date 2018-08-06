@@ -3,19 +3,16 @@ INSERT INTO sylius_product_option (id, code, position, created_at, updated_at) V
 INSERT INTO sylius_product_option (id, code, position, created_at, updated_at) VALUES (132, 't_shirt_size', 1, '2018-08-03 01:21:20', '2018-08-03 01:21:20');
 INSERT INTO sylius_product_option (id, code, position, created_at, updated_at) VALUES (133, 't_shirt_x', 2, '2018-08-03 01:21:20', '2018-08-03 01:21:20');
 INSERT INTO sylius_product_option (id, code, position, created_at, updated_at) VALUES (134, 't_shirt_y', 3, '2018-08-03 01:21:20', '2018-08-03 01:21:20');
-INSERT INTO sylius_product_option (id, code, position, created_at, updated_at) VALUES (135, 't_shirt_z', 4, '2018-08-03 01:21:20', '2018-08-03 01:21:20');
 
 INSERT INTO sylius_product_options (product_id, option_id) VALUES (1302, 131);
 INSERT INTO sylius_product_options (product_id, option_id) VALUES (1302, 132);
 INSERT INTO sylius_product_options (product_id, option_id) VALUES (1302, 133);
 INSERT INTO sylius_product_options (product_id, option_id) VALUES (1302, 134);
-INSERT INTO sylius_product_options (product_id, option_id) VALUES (1302, 135);
 
 INSERT INTO sylius_product_option_translation (id, translatable_id, name, locale) VALUES (130, 131, 'T-Shirt color', 'en_US');
 INSERT INTO sylius_product_option_translation (id, translatable_id, name, locale) VALUES (131, 132, 'T-Shirt size', 'en_US');
 INSERT INTO sylius_product_option_translation (id, translatable_id, name, locale) VALUES (132, 133, 'T-Shirt x', 'en_US');
 INSERT INTO sylius_product_option_translation (id, translatable_id, name, locale) VALUES (133, 134, 'T-Shirt y', 'en_US');
-INSERT INTO sylius_product_option_translation (id, translatable_id, name, locale) VALUES (134, 135, 'T-Shirt z', 'en_US');
 
 INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2304, 131, 'A1');
 INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2305, 131, 'A2');
@@ -157,16 +154,6 @@ INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2440, 134,
 INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2441, 134, 'D8');
 INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2442, 134, 'D9');
 INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2443, 134, 'D10');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2444, 135, 'E1');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2445, 135, 'E2');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2446, 135, 'E3');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2447, 135, 'E4');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2448, 135, 'E5');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2449, 135, 'E6');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2450, 135, 'E7');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2451, 135, 'E8');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2452, 135, 'E9');
-INSERT INTO sylius_product_option_value (id, option_id, code) VALUES (2453, 135, 'E10');
 
 INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2304, 2304, 'A1', 'en_US');
 INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2305, 2305, 'A2', 'en_US');
@@ -308,13 +295,3 @@ INSERT INTO sylius_product_option_value_translation (id, translatable_id, value,
 INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2441, 2441, 'D8', 'en_US');
 INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2442, 2442, 'D9', 'en_US');
 INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2443, 2443, 'D10', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2444, 2444, 'E1', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2445, 2445, 'E2', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2446, 2446, 'E3', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2447, 2447, 'E4', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2448, 2448, 'E5', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2449, 2449, 'E6', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2450, 2450, 'E7', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2451, 2451, 'E8', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2452, 2452, 'E9', 'en_US');
-INSERT INTO sylius_product_option_value_translation (id, translatable_id, value, locale) VALUES (2453, 2453, 'E10', 'en_US');
