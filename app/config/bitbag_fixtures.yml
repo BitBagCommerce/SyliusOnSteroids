@@ -328,7 +328,7 @@ sylius_fixtures:
                                     en_US:
                                         name: |
                                             Homepage video media
-                                        alt: Homepage video
+                                        alt: Sylius access control layer
                                         content: |
                                             <h3>Media description</h3>
                                             <p>
