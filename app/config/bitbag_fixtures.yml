@@ -12,7 +12,7 @@ sylius_fixtures:
                 locale: ~
                 currency:
                     options:
-                        currencies: ['EUR']
+                        currencies: ['USD']
 
                 geographical:
                     options:
@@ -33,7 +33,7 @@ sylius_fixtures:
                                 locales:
                                     - "%locale%"
                                 currencies:
-                                    - "EUR"
+                                    - "USD"
                                 enabled: true
                                 hostname: "demo.bitbag.shop"
 

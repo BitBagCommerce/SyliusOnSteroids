@@ -44,7 +44,8 @@
         "bitbag/mercanet-bnp-paribas-plugin": "dev-master",
         "bitbag/adyen-plugin": "dev-master",
         "bitbag/acl-plugin": "dev-master",
-        "nochso/html-compress-twig": "^2.0"
+        "nochso/html-compress-twig": "^2.0",
+        "bitbag/quadpay-plugin": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.4",

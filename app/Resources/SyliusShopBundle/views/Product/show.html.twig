@@ -1,5 +1,11 @@
 {% extends '@SyliusShop/layout.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('bundles/bitbagsyliusquadpayplugin/css/style.css') }}">
+{% endblock %}
+
 {% block content %}
     {% include '@SyliusShop/Product/Show/_breadcrumb.html.twig' %}
     <div class="ui hidden divider"></div>
@@ -31,6 +37,8 @@
                     <span class="ui sub header">{{ product.code }}</span>
                 </div>
             </div>
+
+            {{ bitbag_quadpay_render_widget(product|sylius_resolve_variant|sylius_calculate_price({'channel': sylius.channel}), sylius.channel) }}
 
             {{ sonata_block_render_event('sylius.shop.product.show.after_price', {'product': product}) }}
 
@@ -65,4 +73,14 @@
     {{ sonata_block_render_event('sylius.shop.product.show.before_associations', {'product': product}) }}
 
     {% include '@SyliusShop/Product/Show/_associations.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('bundles/bitbagsyliusquadpayplugin/js/bitbag-update-quadpay-widget.js') }}"></script>
+
+    <script type="text/javascript">
+        $('#product-price').updateQuadPayWidget();
+    </script>
 {% endblock %}

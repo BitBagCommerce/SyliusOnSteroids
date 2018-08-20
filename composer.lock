@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac0616b1f5e5c3a2d98a1d96ce16fe02",
+    "content-hash": "52bad6f9c1ea8c9948bef0e7de046c6a",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -195,12 +195,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BitBagCommerce/SyliusCmsPlugin.git",
-                "reference": "452b0f9c68b3ea69db5491069f699a1545ed796d"
+                "reference": "e2e6e5bbbe6df987675033bbd885daf783f031f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/452b0f9c68b3ea69db5491069f699a1545ed796d",
-                "reference": "452b0f9c68b3ea69db5491069f699a1545ed796d",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/e2e6e5bbbe6df987675033bbd885daf783f031f8",
+                "reference": "e2e6e5bbbe6df987675033bbd885daf783f031f8",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +251,7 @@
                 "MIT"
             ],
             "description": "CMS plugin for Sylius applications.",
-            "time": "2018-07-26T19:04:40+00:00"
+            "time": "2018-07-27T12:10:59+00:00"
         },
         {
             "name": "bitbag/dhl24-pl-shipping-export-plugin",
@@ -694,6 +694,59 @@
             ],
             "description": "Przelewy24 payment plugin for Sylius applications.",
             "time": "2018-05-04T15:05:11+00:00"
+        },
+        {
+            "name": "bitbag/quadpay-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BitBagCommerce/SyliusQuadPayPlugin.git",
+                "reference": "be6278b0439a48bb5b27dc91fdb16adcef01211a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusQuadPayPlugin/zipball/be6278b0439a48bb5b27dc91fdb16adcef01211a",
+                "reference": "be6278b0439a48bb5b27dc91fdb16adcef01211a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "sylius/sylius": "^1.1",
+                "symfony/symfony": "^3.4|^4.1"
+            },
+            "require-dev": {
+                "behat/behat": "^3.4",
+                "behat/mink": "^1.7@dev",
+                "behat/mink-browserkit-driver": "^1.3",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-selenium2-driver": "^1.3",
+                "friends-of-behat/context-service-extension": "^1.2",
+                "friends-of-behat/cross-container-extension": "^1.1",
+                "friends-of-behat/service-container-extension": "^1.0",
+                "friends-of-behat/symfony-extension": "^1.2.1",
+                "friends-of-behat/variadic-extension": "^1.1",
+                "lakion/mink-debug-extension": "^1.2.3",
+                "phpspec/phpspec": "^4.0",
+                "phpstan/phpstan-doctrine": "^0.10",
+                "phpstan/phpstan-shim": "^0.10",
+                "phpstan/phpstan-symfony": "^0.10",
+                "phpstan/phpstan-webmozart-assert": "^0.10",
+                "phpunit/phpunit": "^6.5",
+                "sylius-labs/coding-standard": "^2.0"
+            },
+            "type": "sylius-plugin",
+            "autoload": {
+                "psr-4": {
+                    "BitBag\\SyliusQuadPayPlugin\\": "src/",
+                    "Tests\\BitBag\\SyliusQuadPayPlugin\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "QuadPay payment plugin for Sylius applications.",
+            "time": "2018-08-20T12:23:28+00:00"
         },
         {
             "name": "bitbag/shipping-export-plugin",
@@ -9651,7 +9704,7 @@
                     "email": "adrien.brault@gmail.com"
                 },
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -9701,7 +9754,7 @@
             ],
             "authors": [
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -12810,7 +12863,8 @@
         "bitbag/invoicing-plugin": 20,
         "bitbag/mercanet-bnp-paribas-plugin": 20,
         "bitbag/adyen-plugin": 20,
-        "bitbag/acl-plugin": 20
+        "bitbag/acl-plugin": 20,
+        "bitbag/quadpay-plugin": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

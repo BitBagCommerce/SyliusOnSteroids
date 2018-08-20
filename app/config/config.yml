@@ -15,6 +15,7 @@ imports:
     - { resource: "@BitBagSyliusInvoicingPlugin/Resources/config/config.yml" }
     - { resource: "@BitBagSyliusAdyenPlugin/Resources/config/state_machine.yml" }
     - { resource: "@BitBagSyliusAclPlugin/Resources/config/config.yml" }
+    - { resource: "@BitBagSyliusQuadPayPlugin/Resources/config/config.yml" }
 
     - { resource: "@AppBundle/Resources/config/services.yml" }
 
@@ -28,6 +29,7 @@ parameters:
 
     bitbag_es_excluded_filter_options: []
     bitbag_es_excluded_filter_attributes: ['book_isbn', 'book_pages']
+    sylius.form.type.checkout_select_payment.validation_groups: ['sylius', 'checkout_select_payment']
 
 framework:
     translator: { fallbacks: ["%locale%"] }

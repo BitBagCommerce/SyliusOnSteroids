@@ -48,6 +48,7 @@ class AppKernel extends Kernel
             new \BitBag\SyliusAclPlugin\BitBagSyliusAclPlugin(),
             new \SitemapPlugin\SitemapPlugin(),
             new \FOS\CKEditorBundle\FOSCKEditorBundle(),
+            new \BitBag\SyliusQuadPayPlugin\BitBagSyliusQuadPayPlugin(),
 
             new \AppBundle\AppBundle(),
         ];
