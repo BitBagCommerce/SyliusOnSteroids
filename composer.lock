@@ -701,12 +701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BitBagCommerce/SyliusQuadPayPlugin.git",
-                "reference": "be6278b0439a48bb5b27dc91fdb16adcef01211a"
+                "reference": "d9216c64cdb8bf9928dafd7c1c35334895c56451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusQuadPayPlugin/zipball/be6278b0439a48bb5b27dc91fdb16adcef01211a",
-                "reference": "be6278b0439a48bb5b27dc91fdb16adcef01211a",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusQuadPayPlugin/zipball/d9216c64cdb8bf9928dafd7c1c35334895c56451",
+                "reference": "d9216c64cdb8bf9928dafd7c1c35334895c56451",
                 "shasum": ""
             },
             "require": {
@@ -746,7 +746,7 @@
                 "MIT"
             ],
             "description": "QuadPay payment plugin for Sylius applications.",
-            "time": "2018-08-20T12:23:28+00:00"
+            "time": "2018-08-21T10:17:28+00:00"
         },
         {
             "name": "bitbag/shipping-export-plugin",
