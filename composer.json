@@ -44,7 +44,11 @@
         "bitbag/mercanet-bnp-paribas-plugin": "dev-master",
         "bitbag/adyen-plugin": "dev-master",
         "bitbag/acl-plugin": "dev-master",
-        "nochso/html-compress-twig": "^2.0"
+        "nochso/html-compress-twig": "^2.0",
+        "php-pm/httpkernel-adapter": "^1.0",
+        "symfony-bundles/queue-bundle": "^2.0",
+        "enqueue/enqueue-bundle": "^0.8.35",
+        "enqueue/amqp-ext": "^0.8.35"
     },
     "require-dev": {
         "behat/behat": "^3.4",
