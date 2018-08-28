@@ -3,3 +3,9 @@ services:
         class: AppBundle\Controller\Action\InPostRedirectAction
         arguments:
             - "@sylius.http_client"
+
+    bitbag_sylius_quadpay_plugin.action.capture:
+        class: AppBundle\Controller\Action\CaptureAction
+        public: true
+        tags:
+            - { name: payum.action, factory: quadpay, alias: payum.action.capture }
