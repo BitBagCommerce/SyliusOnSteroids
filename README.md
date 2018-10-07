@@ -6,10 +6,10 @@ Installation
 ```bash
 $ bin/console do:da:cre -e prod
 $ bin/console do:sche:cre -e prod
-$ bin/console sy:fi:lo -e prod
+$ bin/console sy:fi:lo bitbag -e prod
 $ elasticsearch
 $ bin/console fo:el:po -e prod
-$ sudo rm -rf var/cache/*
+$ rm -rf var/cache/*
 $ yarn install
 $ yarn run gulp
 ```
